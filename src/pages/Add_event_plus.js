@@ -22,11 +22,12 @@ export default function Add_event_plus() {
               src={'/images/Files (2).png'}
                     width={160}
                     height={160}
+                    alt=''
                     className='justify-center text-center items-center mx-[5rem] cursor-pointer '/>
                     </Link>
                     
                     <h3 className='text-xl font-medium'>Add Your First Event</h3>
-                    <p>Looks like you haven't added any events yet.<br/> Click the "Add Event" button to get started!</p>
+                    <p>Looks like you haven&apos;t added any events yet.<br/>Click the  &quot;Add Event&quot; button to get started!</p>
                     <span className='inline-flex space-x-2 my-3'>
                         <button className='text-black border border-1 rounded px-6 py-2 hover:bg-gray-200 hover:first-letter:'>Support article</button>      
                         <Link href={'/Main_event'}>
