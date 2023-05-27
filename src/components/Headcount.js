@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbarhead from './Navbarhead'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Headcount() {
   return (
     <>
-    <div className='container mx-auto px-4'>
+        <div className='container mx-auto px-4 '>
         <span className='flex space-x-8'>
         <Image src="/images/darkhome_icon.png" alt='' width={20} height={20} className='w-4 h-5 my-2'/>
         <Image src="/images/arrow.png" alt='' width={20} height={20} className='w-3 h-4 my-[0.6rem]'/>
@@ -22,11 +23,17 @@ export default function Headcount() {
         <Image src="/images/Icondown.png" width={20} height={20} alt="" className="w-3 h-3 mr-2"/>
         Export
        </button>
-       <button className=" hover:bg-blue-800 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm md:px-5 sm:px-3 px-3  text-center inline-flex items-center bg-blue-600 text-white  md:mr-2  mb-2">+ Add Event</button>
+       
+       <button className=" hover:bg-blue-800 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm md:px-5 sm:px-3 px-3  text-center inline-flex items-center bg-blue-600 text-white  md:mr-2  mb-2">
+       <Link href='/Add_event_plus'>+ Add Event
+       </Link>
+
+       </button>
     </span> 
     <p className="text-lg font-light text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
 </div>
 <Navbarhead/>
+
     </>
   )
 }

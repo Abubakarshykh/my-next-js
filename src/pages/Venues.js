@@ -11,18 +11,24 @@ export default function Venues() {
   return (
     <>
       <Sidenav />
-      <div class="bg-[#0d44b3] h-full md:pl-6 md:pt-3  sm:ml-64">
-        <div class="p-3 bg-white md:rounded-l-2xl h-full dark:border-gray-700">
-          <div class="grid grid-cols-1 gap-1 mb-4">
+      <div class="bg-[#0d44b3] h-full md:pl-6 md:pt-3  sm:ml-64 relative">
+        <div class="p-4 bg-white md:rounded-tl-[2rem] h-full dark:border-gray-700">
+          <div class="grid grid-cols-1 gap-1">
             {/* <Main_navbar/> */}
-            <Headcount />
+            <Headcount/>
             <span className='px-[1rem]'>
-
             <Searchbar />
             </span>
+            </div>
+           </div>
+           <div class="p-3 bg-white md:rounded-bl-[2rem] h-full dark:border-gray-700 ">
+          <div class="grid grid-cols-1 gap-1 mb-4">
             <Mapvenue />
+           
+          
             <div className="relative overflow-x-auto ">
               <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                
                 <Header_venue />
                 <tbody>
                   <Contentvenue

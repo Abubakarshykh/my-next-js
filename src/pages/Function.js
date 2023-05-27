@@ -15,7 +15,7 @@ export default function Function() {
       <Sidenav />
 
       <div class="bg-[#0d44b3] h-screen md:pl-6 md:pt-3  sm:ml-64">
-        <div class="p-3 bg-white md:rounded-l-2xl h-full dark:border-gray-700">
+        <div class="p-4 bg-white md:rounded-l-[2rem] h-full dark:border-gray-700">
           <div class="grid grid-cols-1 gap-1 mb-4 h-full">
             <Headcount />
             <span className='px-[1rem]'>

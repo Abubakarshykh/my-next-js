@@ -1,7 +1,8 @@
 import React from 'react'
-import Header_venue from './Header_venue'
+// import Header_venue from './Header_venue'
 import Button from './Button'
 import Image from 'next/image'
+import Checked_checkbox from './Checked_checkbox'
 
 export default function Contentvenue(props) {
   return (
@@ -9,7 +10,7 @@ export default function Contentvenue(props) {
     {/* <Header_venue/> */}
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal md:text-lg pt-3 sm:pt-1 text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+            <Checked_checkbox/>
             {props.venuenames[0]}
         </td>
         <td className="px-8 py-4 flex-wrap">
@@ -28,7 +29,8 @@ export default function Contentvenue(props) {
     {/* Row_2 */}
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal md:text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className='my-1 mx-2'/>
+        <Checked_checkbox/>
+
             {props.venuenames[1]}
         </td>
         <td className="px-8 py-4 flex-wrap">
@@ -48,7 +50,8 @@ export default function Contentvenue(props) {
 
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className='my-1 mx-2'/>
+        <Checked_checkbox/>
+
             {props.venuenames[2]}
         </td>
         <td className="px-8 py-4 flex-wrap">
@@ -67,7 +70,7 @@ export default function Contentvenue(props) {
 
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className='my-1 mx-2'/>
+        <Checked_checkbox/>
             {props.venuenames[3]}
         </td>
         <td className="px-8 py-4 flex-wrap">

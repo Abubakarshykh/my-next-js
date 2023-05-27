@@ -11,7 +11,7 @@ export default function Tableheader() {
         {/* Header_table */}
         <tr>
           <th scope="col" className="px-6 py-7 gap-2 text-gray-400 text-sm font-normal flex">
-            <Image src='/images/_Checkbox base.png' alt='' width={20} height={20} className='mx-2' />
+            <Image src='/images/_Checkbox base.png' alt='' width={20} height={20} className='mx-2 w-[1.2rem] h-[1.2rem]' />
             Department Name
             <Link href='/'>
               <Image src='/images/downby.png' alt='' width={15} height={15} className='my-1 mx-2' />

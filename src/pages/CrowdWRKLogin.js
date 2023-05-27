@@ -12,7 +12,8 @@ export default function CrowdWRKLogin() {
                     style={{
                         backgroundImage: `url(../Settingsimg/Blur.png)`,
                         backgroundSize: '100% 100%',
-                        backgroundRepeat: 'no-repeat'
+                        backgroundRepeat: 'no-repeat',
+                        
                     }}>
                     <div className="content_box justify-center items-center inline-flex pl-20 pr-20 pt-10 word-break">
 
@@ -25,11 +26,11 @@ export default function CrowdWRKLogin() {
                                 {/* <!-- Avatars --> */}
 
                                 <div className="flex -space-x-3">
-                                    <Image src="/Settingsimg/Avatar (6).png" alt="" className="w-15 h-15 z-50" />
-                                    <Image src="/Settingsimg/Avatar (7).png" alt="" className="w-15 z-40" />
-                                    <Image src="/Settingsimg/Avatar (8).png" alt="" className="w-15  z-30" />
-                                    <Image src="/Settingsimg/Avatar (9).png" alt="" className="w-15  z-20" />
-                                    <Image src="/Settingsimg/Avatar (10).png" alt="" className="w-15 z-10" />
+                                    <Image src="/Settingsimg/Avatar (6).png" width={35} height={35} alt="" className="w-15 h-15 z-50" />
+                                    <Image src="/Settingsimg/Avatar (7).png"  width={35} height={35} alt="" className="w-15 z-40" />
+                                    <Image src="/Settingsimg/Avatar (8).png" width={35} height={35} alt="" className="w-15  z-30" />
+                                    <Image src="/Settingsimg/Avatar (9).png" width={35} height={35} alt="" className="w-15  z-20" />
+                                    <Image src="/Settingsimg/Avatar (10).png" width={35} height={35} alt="" className="w-15 z-10" />
                                 </div>
                                 {/* <!-- Stars --> */}
                                 <div className="pt-1 flex gap-x-1">

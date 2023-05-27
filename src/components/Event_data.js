@@ -1,14 +1,17 @@
 import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
+import Checkbox from './Checkbox'
+import Checked_checkbox from './Checked_checkbox'
 
 export default function Event_data(props) {
   return (
     <>
      {/* Row_1 */}
-     <tr className="bg-gray-50 border-b ">
+     <tr className=" border-b ">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+            {/* <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/> */}
+            <Checkbox/>
             {props.firstnames[0]}
         </td>
         <td className="px-6 py-4 flex-wrap">
@@ -30,7 +33,7 @@ export default function Event_data(props) {
     {/* Row_2 */}
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+            <Checked_checkbox/>
             {props.firstnames[1]}
         </td>
         <td className="px-6 py-4 flex-wrap">
@@ -52,7 +55,8 @@ export default function Event_data(props) {
     {/* Row_3 */}
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+       <Checked_checkbox/>
+
             {props.firstnames[2]}
         </td>
         <td className="px-6 py-4 flex-wrap">
@@ -72,9 +76,9 @@ export default function Event_data(props) {
         </td>
     </tr>
     {/* Row_4 */}
-    <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
+    <tr className="border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+            <Checkbox/>
             {props.firstnames[3]}
         </td>
         <td className="px-6 py-4 flex-wrap">
@@ -95,7 +99,8 @@ export default function Event_data(props) {
     </tr>
     <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className='my-1 mx-2'/>
+        <Checked_checkbox/>
+
             {props.firstnames[4]}
         </td>
         <td className="px-6 py-4 flex-wrap">
@@ -114,9 +119,9 @@ export default function Event_data(props) {
             <Button/> 
         </td>
     </tr>
-    <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
+    <tr className=" border-b dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+        <Checkbox/>
             {props.firstnames[5]}
         </td>
         <td className="px-6 py-4 flex-wrap">
@@ -135,9 +140,10 @@ export default function Event_data(props) {
             <Button/> 
         </td>
     </tr>
-    <tr className="bg-gray-50 border-b dark:bg-gray-900 dark:border-gray-700">
+    <tr className="bg-gray-50 border-none dark:bg-gray-900 dark:border-gray-700">
         <td scope="row" className="px-6 py-4 flex font-normal text-lg text-gray-600 whitespace-nowrap dark:text-white ">
-            <Image src='/images/_Checkbox_tick.png' alt='' width={20} height={20} className=' my-1 mx-2'/>
+                    <Checked_checkbox/>
+
             {props.firstnames[6]}
         </td>
         <td className="px-6 py-4 flex-wrap">

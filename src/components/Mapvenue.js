@@ -8,7 +8,7 @@ export default function Mapvenue() {
     backgroundImage: "url('/images/Map.png')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-      }} className='w-full h-screen'>
+      }} className='lg:w-full max-w-[90rem] lg:h-screen md:block hidden mx-2 mr-2'>
   </div>
     </>
   )

@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Navbarhead(props) {
   return (
     <>
-    <nav className="bg-white border-b border-gray-200 pt-2 dark:bg-gray-900">
+     <nav className="bg-white border-b border-gray-200 pt-2 dark:bg-gray-900">
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pl-4">
       <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
@@ -16,42 +16,42 @@ export default function Navbarhead(props) {
           <li>
           <Link href={'/Overview'}>
               <span 
-              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b border-blue-500 md:hover:pb-[0.9rem]" 
+              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b-2 border-blue-500 md:hover:pb-[0.9rem]" 
               aria-current="page">Overview</span>
               </Link>
           </li>
           <li>
             <Link href={'/Main_event'}>
               <span  
-              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b border-blue-500 md:hover:pb-[0.9rem]" 
+              className=" text-blue-500 font-medium text-lg ml-auto cursor-pointer hover:border-b-2 border-blue-500 md:hover:pb-[0.9rem]" 
                aria-current="page">Events</span>
               </Link>
               </li>
               <li>
               <Link href={'/Deaprtments'} >
               <span  
-              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b border-blue-500 md:hover:pb-[0.9rem]" 
+              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b-2 border-blue-500 md:hover:pb-[0.9rem]" 
                aria-current="page">Departments</span>
               </Link>
               </li>
               <li>
               <Link href={'/Function'} >
               <span  
-              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b border-blue-500 md:hover:pb-[0.9rem]" 
+              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b-2 border-blue-500 md:hover:pb-[0.9rem]" 
                aria-current="page">Function</span>
               </Link>
               </li>
               <li>
               <Link href={'/Roles'} >
               <span  
-              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b border-blue-500 md:hover:pb-[0.9rem]" 
+              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b-2 border-blue-500 md:hover:pb-[0.9rem]" 
                aria-current="page">Roles</span>
               </Link>
               </li>
               <li>
               <Link href={'/Venues'} >
               <span  
-              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b border-blue-500 md:hover:pb-[0.9rem]" 
+              className=" text-gray-500 font-normal text-lg ml-auto cursor-pointer hover:border-b-2 border-blue-500 md:hover:pb-[0.9rem]" 
                aria-current="page">Venues</span>
               </Link>
           </li>

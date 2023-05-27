@@ -6,7 +6,7 @@ export default function Pagination() {
   return (
     <>
     
-<nav aria-label="Page navigation example" className='w-full justify-center text-center  rounded-b-lg'>
+<nav aria-label="Page navigation example" className='w-full justify-center text-center rounded-b-lg my-2'>
     <div className='flex justify-center'>
     <span className='flex mr-auto px-5 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'>
     <Image src='/images/previous.png' alt='' width={20} height={20} className='w-3 h-3 mt-1 ml-2'/>

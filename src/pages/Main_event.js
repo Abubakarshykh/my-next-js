@@ -16,7 +16,7 @@ export default function Main_event(props) {
     <>
       <Sidenav />
       <div class="bg-[#0d44b3] h-screen md:pl-6 md:pt-3 sm:ml-64">
-        <div class="p-3 bg-white md:rounded-l-3xl h-full dark:border-gray-700">
+        <div class="pl-5 py-6 bg-white md:rounded-l-[2rem] h-full dark:border-gray-700">
           <div class="grid grid-cols-1 gap-1 h-full">
             {/* <Main_navbar/> */}
             <Headcount />

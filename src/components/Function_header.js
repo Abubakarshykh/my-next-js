@@ -10,13 +10,13 @@ export default function Function_header() {
       {/* Header_table */}
       <tr>
         <th scope="col" className="px-6 py-7 gap-2 text-gray-400 text-sm font-normal flex">
-          <Image src='/images/_Checkbox base.png' alt='' width={15} height={50} className='w-5 h-5 mx-2' />
+          <Image src='/images/_Checkbox base.png' alt='' width={15} height={15} className='w-5 h-5 mx-2' />
           Function name
           <Link href='/'>
             <Image src='/images/downby.png' alt='' width={15} height={15} className='w-4 h-4 my-1 mx-2' />
           </Link>
         </th>
-        <th scope="col" className="px-6 py-3 font-normal text-gray-400 text-sm font-normal">
+        <th scope="col" className="px-6 py-3 font-normal text-gray-400 text-sm ">
           Function Code
         </th>
         <td className="px-6 py-4">
