@@ -10,7 +10,7 @@ export default function Signup() {
             <div className="flex flex-col lg:flex-row mx-auto h-screen lg:-space-x-7">
 
                 {/* <!-- left_section --> */}
-                <div className="w-full lg:block hidden lg:w-[52%] lg:pt-[8rem] "
+                <div className="w-full lg:w-[52%] lg:pt-[8rem] pb-5 "
                     style={{
                         backgroundImage: "url('/images/Blur.png')",
                         backgroundSize: " 100% 100%",
@@ -21,12 +21,12 @@ export default function Signup() {
 
                         {/* <!-- content --> */}
                         <div className="justify-center ">
-                            <h3 className="text-3xl font-semibold text-white md:text-2xl px-6">Streamline Your <br/>Event Planning <br/>with CROWD <Link href={'/'} className="text-white font-light">WRK</Link></h3>
-                            <p className="text-white font-normal text-xl tracking-wide py-5 px-6 ">Say goodbye to inefficient planning and execution - CROWDWRK is designed to simplify every step of your event planning process.</p>
+                            <h3 className=";lg:text-3xl text-2xl font-semibold text-center text-white md:text-2xl lg:px-6 px-[2rem]">Streamline Your <br/>Event Planning <br/>with CROWD <Link href={'/'} className="text-white font-light">WRK</Link></h3>
+                            <p className="text-white font-normal lg:text-xl text-center tracking-wide py-5 lg:px-6 px-[8rem]  ">Say goodbye to inefficient planning and execution - CROWDWRK is designed to simplify every step of your event planning process.</p>
                             <div className="flex flex-col  sm:flex-row gap-3 mt-3">
                                 {/* <!-- Avatars --> */}
 
-                                <div className="flex -space-x-3 px-5">
+                                <div className="flex -space-x-3 px-5 justify-center">
                         <Image src="/Settingsimg/Avatar (6).png" width={35} height={35} alt=""className=" z-50"/>
                         <Image src="/Settingsimg/Avatar (7).png" width={35} height={35} alt="" className=" z-40"/>
                         <Image src="/Settingsimg/Avatar (8).png" width={35} height={35} alt="" className="  z-30"/>
@@ -34,30 +34,30 @@ export default function Signup() {
                         <Image src="/Settingsimg/Avatar (10).png" width={35} height={35} alt="" className=" z-10"/>
                     </div>
                     {/* <!-- Stars --> */}
-                    <div className="pt-1 flex  ">
+                    <div className="pt-1 flex justify-center ">
                         {/* <Avatarsnew/> */}
                         {/* <Avatarsnew/> */}
                         <Avatarsnew/>
                         <Link href="/" className="text-white  text-lg my-[-.2rem]">5.0</Link>
                     </div>
                 </div>
-                <p className="text-white text-lg lg:ml-[11.6rem] lg:mt-[-1rem]">From  200+ reviews</p>
+                <p className="text-white text-center text-lg lg:ml-[11.6rem] lg:mt-[-1rem]">From  200+ reviews</p>
             </div>
         </div>
     </div>
                 {/* <!-- Right-section --> */}
-                <div className="justify-center h-screen items-center lg:w-[54%] z-50 bg-white lg:rounded-l-[2rem] ">
+                <div className="justify-center h-screen items-center pt-5 lg:w-[54%] z-50 bg-white lg:rounded-l-[2rem] ">
                     {/* <!-- Logo_crowdwrk --> */}
                     <div className="justify-center text-center flex ">
                         <Image 
                         src="/images/crowdwrk_logo.png" 
-                        className="text-center justify-center pt-2 pb-2" 
+                        className="text-center justify-center pt-2 pb-2 w-[9rem] h-[6rem]" 
                         alt=""
-                        width={110} height={110} />
+                        width={100} height={100} />
                     </div>
                     {/* <!-- Headng Right section --> */}
-                    <div className="  xl:pl-[11rem] pl-[2.7rem] lg:pl-[9.2rem] xl:pt-5   ">
-                        <h1 className="font-bold text-size indent-2.5 text-2xl">Sign up</h1>
+                    <div className="  xl:pl-[11rem] pl-[2.7rem] lg:pl-[9.2rem] xl:pt-5 space-y-2 ">
+                        <h1 className="font-semibold text-size indent-2.5 text-3xl">Sign up</h1>
                         <p className="font-normal text-sm pl-[.8rem] xl:pt-0 text-gray-500 ">Welcome back! Please enter your details.</p>
                     </div>
                     {/* <!-- form_right section --> */}
@@ -67,8 +67,17 @@ export default function Signup() {
                             {/* Form section (inputs) */}
 
                             <form>
+                            
                                 <div className="grid gap-1 md:grid-cols-1 pl-[1rem]">
-                                    <div className="">
+                                    <div class="relative z-0 w-full mb-6 group">
+                                <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                                </div>
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="password" name="floating_password" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                    <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Create password</label>
+                                    </div>
+                                    {/* <div className="">
                                         <label for="email" className="block mb-2 text-sm text-gray-700 dark:text-white">Email address</label>
                                         <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required />
                                     </div>
@@ -76,11 +85,15 @@ export default function Signup() {
                                         <label for="password" className="block mb-2 text-sm text-gray-700 dark:text-white">Password</label>
                                         <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Create a password" required />
                                         <p className="text-sm text-gray-400 ">Use 8 or more characters with a mix of letters, numbers & symbols.</p>
-                                    </div>
-                                    <div className="">
+                                    </div> */}
+                                    {/* <div className="">
                                         <label for="password" className="block mb-2 text-sm text-gray-700 dark:text-white">Confirm Pasword</label>
                                         <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Create a password" required />
-                                    </div>
+                                    </div> */}
+                                    <div class="relative z-0 w-full mb-6 group">
+                                        <input type="password" name="floating_password" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                        <label htmlFor="floating_password" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+                                        </div>
                                 </div>
                                 {/* <!-- Buttons --> */}
                                 <div className="btn_portion px-3">
@@ -102,6 +115,7 @@ export default function Signup() {
                 <span className="flex text-sm text-gray-500 sm:text-center justify-center ">© Crowded Events Ltd. 2023</span>
                 <span className='flex text-sm text-gray-500 ml-auto sm:text-center justify-center'>support@crowdwrk.com</span>        
             </footer>
+            
                 </div>
             </div>
 
